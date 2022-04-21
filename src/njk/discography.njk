@@ -1,0 +1,21 @@
+{% extends '_templates/base.njk' %}
+
+{% block content %}
+<article class="container">
+  <h1>Queen Discography</h1>
+    <p>List of all 15 Queen albums.</p>
+      <div class="row">
+        {% for album in queen.discography %}
+        <div class="col-lg-4 col-md-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">{{ album.title }}</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+</article>
+{% endblock %}
