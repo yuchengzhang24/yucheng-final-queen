@@ -1,21 +1,27 @@
 {% extends '_templates/base.njk' %}
 
+{% block page_title %}Band Discography{% endblock %}
+
+{% block page_description %}A list of all 15 of Queen's albums with year and image.{% endblock %}
+
 {% block content %}
 <article class="container">
   <h1>Queen Discography</h1>
-    <p>List of all 15 Queen albums.</p>
-      <div class="row">
-        {% for album in queen.discography %}
-        <div class="col-lg-4 col-md-6">
-          <div class="card mb-4">
-            <div class="card-body">
-              <h5 class="card-title">{{ album.title }}</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
+    <p>List of all 15 Queen albums in chronological order. All are legendary.</p>
+    <hr>
+  <div class="row">
+    {% for album in queen.discography %}
+    <div class="col-lg-4 col-md-6">
+      <div class="card border-warning bg-dark text-warning text-center mb-4">
+        <img class="card-img-top" src="../img/discs/{{ album.image }}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{ album.title }}</h5>
+          <p class="card-text">{{ album.year }}</p>
         </div>
-        {% endfor %}
       </div>
+    </div>
+    {% endfor %}
+    <hr>
+  </div>
 </article>
 {% endblock %}

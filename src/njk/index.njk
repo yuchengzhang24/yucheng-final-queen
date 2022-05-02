@@ -5,19 +5,27 @@
 {% block page_description %}The index search description for this page goes here.{% endblock %}
 
 {% block content %}
+<div class=container>
+  
+</div>
 <div class="container">
-   <div class="row">
-    <div class="col-md-8 offset-md-2">
-  <h1>Main headline here</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in facilisis velit, aliquam congue dui. Mauris id mi quam. Nam enim leo, bibendum vel efficitur id, elementum malesuada est. Pellentesque interdum tempus eros nec iaculis. Quisque ac est dictum, vehicula nulla quis, condimentum dui.</p>
-  <h2>Band Members loop</h2>
-  <p>This loops through data that came from a Google Docs example.</p>
-  <hr>
-  {% for dude in queen.members %}
-    <h3><a href="queen/{{ dude.slug }}.html" target="_blank">{{ dude.name }}</a></h3>
-    <hr>
-  {% endfor %}
+  <div class="row">
+    <div class="col-lg-12">
+      <h1>We are the Champions</h1>
+      <img src="img/queen-band-early.jpg" class="img-fluid" alt="">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in facilisis velit, aliquam congue dui. Mauris id mi quam. Nam enim leo, bibendum vel efficitur id, elementum malesuada est. Pellentesque interdum tempus eros nec iaculis. Quisque ac est dictum, vehicula nulla quis, condimentum dui.</p>
+      
+      <hr>
     </div>
+  </div>
+  <div class="row">
+    {% for dude in queen.members %}
+    <div class="col-lg-6 my-3 text-center">
+      <img src="img/members/{{ dude.imagebw }}" alt="" class="img-fluid">
+      <h3><a href="queen/{{ dude.slug }}.html" target="_blank">{{ dude.name }}</a></h3>
+    </div>
+    {% endfor %}
+    <hr>
   </div>
 </div>
 {% endblock %}
