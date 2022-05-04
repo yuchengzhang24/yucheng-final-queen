@@ -23,6 +23,7 @@ $secondary:#231f20;
 // Import partials
 @import "nav";
 @import "jumbotron";
+@import "subscribe";
 
 
 body {
@@ -64,13 +65,13 @@ p {
   color: #353839;
 }
 
-#list-bg {
-  background-color: #353839;
-  color: white;
-  border-color: white;
-}
-
 .table {
   color:white;
   border-color: #7F00FF;
+}
+
+.list-group-item {
+  background-color: #7F00FF;
+  color: white;
+  border-color: black;
 }
