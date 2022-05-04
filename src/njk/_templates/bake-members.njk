@@ -14,16 +14,17 @@
       </div>
       <div class="col-md-8">
         <div class="card border-warning">
-  <div class="card-body bg-warning text-black">
-    <h1 class="card-title">{{ name }}</h5>
-    <p class="card-text">{{ description | safe }}</p>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">Tenure: {{tenure}}</li>
-    <li class="list-group-item">Instruments: {{instruments}}</li>
-    <li class="list-group-item">Birthday: {{birthdate}}</li>
-    <li class="list-group-item">Birthplace: {{birthplace}}</li>
-  </ul>
-  </div>
+        <div class="card-body bg-warning text-black">
+          <h1 class="card-title">{{ name }}</h5>
+          <p class="card-text">{{ description | safe }}</p>
+        <ul id="list-bg" class="list-group list-group-flush">
+          <li id="list-bg" class="list-group-item">Tenure: {{tenure}}</li>
+          <li id="list-bg" class="list-group-item">Instruments: {{instruments}}</li>
+          <li id="list-bg" class="list-group-item">Birthday: {{birthdate}}</li>
+          <li id="list-bg" class="list-group-item">Birthplace: {{birthplace}}</li>
+        </ul>
+        </div>
+        </div>
     </div>
   </article>
 {% endblock %}

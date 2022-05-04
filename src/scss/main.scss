@@ -5,6 +5,8 @@
 // $body-color: white;
 // $link-hover-color: grey;
 // $font-family-sans-serif: "Helvetica Neue";
+$warning:#7F00FF;
+$secondary:#231f20;
 
 /* bootstrap */
 // Option A: Include all of Bootstrap
@@ -26,7 +28,6 @@
 body {
   background-color: black;
   text-align: center;
-  color: #ffbb33;
 }
 
 h3 {
@@ -34,9 +35,46 @@ h3 {
 }
 
 h1 {
-
+  font-family: 'Cinzel', serif;
+  font-size: 40px;
+  color: white;
+  letter-spacing: .5rem;
 }
 
-li {
-  color: #ffbb33
+p {
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.25rem;
+}
+
+.card-text {
+  color: #7F00FF;
+}
+
+.card-title {
+  font-family: 'Cinzel', serif;
+  font-size: 18px;
+}
+
+.link {
+  color:#7F00FF
+}
+
+.link:hover {
+  color: #36454F;
+}
+
+#list-bg {
+  background-color: #353839;
+  color: white;
+  border-color: white;
+}
+
+.table {
+  color:white;
+  border-color: #7F00FF;
+}
+
+td {
+  border-color: #7F00FF;
 }

@@ -1,0 +1,31 @@
+{% extends '_templates/base.njk' %}
+
+{% block page_title %}Band Discography{% endblock %}
+
+{% block page_description %}A list of all 15 of Queen's albums with year and image.{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h1>Queen Tour Dates</h1>
+  <p>List of all upcoming tour dates for Queen.</p>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>City</th>
+        <th>Venue</th>
+      </tr>
+    </thead>    
+    {% for concert in queen.tour %}
+    <tbody>
+      <tr>
+        <td>{{ concert.date }}</td>
+        <td>{{ concert.city }}</td>
+        <td>{{ concert.venue }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+{% endblock %}

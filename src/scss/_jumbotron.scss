@@ -2,8 +2,30 @@
   background: url(../img/queen-band-wallpaper-thin.jpg) no-repeat center;
   background-size: cover;
   color: white;
+  margin-bottom: 30px;
+  margin-top: -4.1rem;
 }
 
-#jumbo {
-  margin-bottom: 30px;
+#jumbosubheader {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
+  color: white;
+  font-style: italic;
+  opacity: 1;
 }
+
+#jumboheading {
+  font-family: 'Cinzel', serif;
+  font-size: 60px;
+  letter-spacing: .5rem;
+  color:white;
+  opacity: 1;
+}
+
+//.transbox {
+//  margin: 10px;
+//  border-left: -5rem;
+//  border-right: -5rem;
+//  background: rgb(204, 204, 204, 0.075);
+//}
+
